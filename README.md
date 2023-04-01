@@ -32,7 +32,7 @@ This builds on the excellent UI from https://github.com/mckaywrigley/wait-but-wh
 
 ## Deploy
 
-Note: the app that supports streaming is deployed to fly.io: 
+Note: the app that supports streaming is deployed to fly.io: https://shenyen-gpt.vercel.app/
 
 This is because Vercel requires edge functions for streaming.
 
