@@ -19,7 +19,7 @@ export default async function handler(
         environment: "us-east1-gcp", 
         apiKey: process.env.PINECONE_API_KEY ?? "",
       });
-      const index = pinecone.Index("lex-gpt");
+      const index = pinecone.Index("shenyen-gpt");
       const vectorStore = await PineconeStore.fromExistingIndex(
         new OpenAIEmbeddings(), {pineconeIndex: index},
       );
