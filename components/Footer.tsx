@@ -7,32 +7,23 @@ export const Footer: FC = () => {
       <div className="hidden sm:flex"></div>
 
       <div className="hidden sm:flex italic text-sm">
-        Created by
+        Revised from
         <a
           className="hover:opacity-50 mx-1"
-          href="https://twitter.com/RLanceMartin"
+          href="https://github.com/PineappleExpress808/lex-gpt"
           target="_blank"
           rel="noreferrer"
         >
-          Lance Martin
+          Lance Martin's Lex-gpt
         </a>
         based on
         <a
           className="hover:opacity-50 ml-1"
-          href="https://twitter.com/lexfridman"
+          href="https://www.youtube.com/@DDMTV02/playlists"
           target="_blank"
           rel="noreferrer"
         >
-          Lex Fridman
-        </a>
-        {`'s blog`}
-        <a
-          className="hover:opacity-50 ml-1"
-          href="https://lexfridman.com/podcast/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Podcast
+          ShenYen's Class Lectures
         </a>
         .
       </div>
