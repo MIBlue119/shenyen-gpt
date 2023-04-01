@@ -15,7 +15,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<Data>) => {
         environment: "us-east1-gcp", 
         apiKey: process.env.PINECONE_API_KEY ?? "",
       });
-      const index = pinecone.Index("lex-gpt");
+      const index = pinecone.Index("shenyen-gpt");
       const vectorStore = await PineconeStore.fromExistingIndex(
         new OpenAIEmbeddings(), {pineconeIndex: index},
       );

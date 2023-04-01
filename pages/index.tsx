@@ -46,7 +46,7 @@ export default function Home() {
     setChunks(results);
 
     // Prompt for LLM summarization
-    const prompt = `You are a helpful assistant that accurately answers queries using Lex Fridman podcast episodes. Use the text provided to form your answer, but avoid copying word-for-word from the posts. Try to use your own words when possible. Keep your answer under 5 sentences. Be accurate, helpful, concise, and clear. Use the following passages to provide an answer to the query: "${query}"`
+    const prompt = `You are a helpful assistant that accurately answers queries using Master Shenyen(聖嚴法師)'s lectures. Use the text provided to form your answer, but avoid copying word-for-word from the posts. Try to use your own words when possible. Keep your answer under 5 sentences. Be accurate, helpful, concise, and clear. Use the following passages to provide an answer to the query: "${query}" Return the result in language:#lang:zh-Tw`
     const ctrl = new AbortController();
     
     fetchEventSource("/api/vectordbqa",  {
@@ -77,10 +77,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Lex GPT</title>
+        <title>ShenYen GPT</title>
         <meta
           name="description"
-          content={`AI-powered search and chat for the Lex Fridman podcast. `}
+          content={`AI-powered search and chat for the Master Shenyen(聖嚴法師). `}
         />
         <meta
           name="viewport"
@@ -103,7 +103,7 @@ export default function Home() {
                   ref={inputRef}
                   className="h-12 w-full rounded-full border border-zinc-600 pr-12 pl-11 focus:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-zinc-800 sm:h-16 sm:py-2 sm:pr-16 sm:pl-16 sm:text-lg"
                   type="text"
-                  placeholder="What is the path to AGI?"
+                  placeholder="學佛對生活的幫助?"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   onKeyDown={handleKeyDown}
@@ -195,7 +195,7 @@ export default function Home() {
                 ))}
               </div>
             ) : (
-              <div className="mt-6 text-center text-lg">{`AI-powered search and chat for the Lex Fridman podcast.`}</div>
+              <div className="mt-6 text-center text-lg">{`AI-powered search and chat for the the Master Shenyen(聖嚴法師).`}</div>
             )}
           </div>
         </div>
