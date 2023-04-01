@@ -38,7 +38,7 @@ This is because Vercel requires edge functions for streaming.
 
 We are working on getting edge functions working with Langchain.
 
-In the meantime, use https://lex-gpt.fly.dev/ for the more performant app.
+In the meantime, use   https://shenyen-gpt.vercel.app/ for the more performant app.
 
 ## Credits
 
