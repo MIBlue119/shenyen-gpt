@@ -1,7 +1,6 @@
 # ShenyenGPT
 
 This app enables AI-powered search for Master Sheng Yen's Classical Lectures
-
 This is also a testbed for exploring Langchain functionality.
 
 - The repository is revised from  [Lex-GPT](https://github.com/PineappleExpress808/lex-gpt)
