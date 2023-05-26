@@ -43,7 +43,6 @@ In the meantime, use   https://shenyen-gpt.vercel.app/ for the more performant a
 ## Credits
 
 Thanks to [Mckay Wrigley](https://twitter.com/mckaywrigley) for open-sourcing his UI.
-
 Thanks to [RLanceMartin](https://twitter.com/RLanceMartin) open source his [Lex-GPT](https://github.com/PineappleExpress808/lex-gpt)
 
 
